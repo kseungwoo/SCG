@@ -1,4 +1,5 @@
 let started=false
+let finished=false
 let playerRemain = 4
 let computerRemain = 4
 let playerCardList=['NobleCard', 'NobleCard', 'GeneralCard', 'GeneralCard']
@@ -6,6 +7,10 @@ let computerCardList=['SlaveCard', 'SlaveCard', 'GeneralCard', 'GeneralCard']
 let turn=1
 
 const cardBattle = (playerCard) => {
+    if (finished==true) {
+        alert('이미 끝난 게임입니다.')
+        return
+    }
     randomizedIndex = Math.floor(Math.random() * (computerRemain));
     computerCard=computerCardList[randomizedIndex]
     if (playerCard==computerCard) {
@@ -92,12 +97,15 @@ const cardBattle = (playerCard) => {
     }
 
     if (playerRemain==0 && computerRemain==0) {
-        alert('draw!')
+        finished=true
+        alert('무승부 입니다.')
     }
     else if (playerRemain==0) {
+        finished=true
         alert('컴퓨터가 이겼습니다.')
     }
     else if (computerRemain==0) {
+        finished=true
         alert('플레이어가 이겼습니다.')
     }
     turn+=1
