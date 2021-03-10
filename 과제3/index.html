@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>3일차 과제</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <img src="img/title.png" alt="타이틀을 로드할 수 없습니다." id="title_img"><br>
+        <img src="img/title_bottom.png" alt="" id="title_img_bottom">
+        <p>* 글 번호는 1번부터 시작합니다. *</p>
+    </div>
+    <div style="display: flex; justify-content: space-around;">
+        <div class="post_article">
+            <h3>글 작성</h3>
+            <form id='article-post' action='/article' method='POST'>
+                제목: <input type="text" name='title' id='title'><br>
+                내용: <input type="text" name='content' id='content'> <br>
+                <input type="submit">
+            </form>
+        </div>
+        <div class="get_article">
+            <h3>글 조회</h3>
+            <form id='article-get' action='/article' method='GET'>
+                글 번호: <input type="text" name='index' id='index'><br>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
