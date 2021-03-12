@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/project1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성균관대학교 기숙사</title>
+</head>
+<body>
+    <header> 
+        <img id="header_logo" src="images/header_logo.png" alt="로고 이미지를 로드할 수 없습니다.">
+    </header>
+    <nav> 
+        <a href="#introduction" class="nav_a">기숙사 입사 대상 및 일정</a>
+        <br>
+        <a href="#apply" class="nav_a">기숙사 입사 신청</a>
+        <br>
+        <a href="http://dorm.skku.edu/" class="nav_a">SKKU 기숙사 공식 페이지</a>
+    </nav>
+    <section id="introduction">
+        <br><br><br>
+        <h3>최고의 인재를 위한 안식처 성균관대학교 기숙사</h3>
+        <h2>기숙사 입사 대상 및 일정</h2>
+        <hr>
+        <br><br>
+        <img src="images/dorm_apply_info.png" alt="기숙사 신청 자격 및 일정 이미지를 로드할 수 없습니다.">
+    </section>
+    <section id="apply">
+        <br><br>
+        <h3>성균관대 학생들의 보금자리가 될</h3>
+        <h2>2021 기숙사 입사 신청</h2>
+        <hr>
+        <table border="1">
+            <tr>
+                <th rowspan="2">2인1실</th>
+                <th>정원</th>
+                <th>2인</th>
+                <th rowspan="2">
+                <div class="img">
+                <div class="scale">
+                    <img src="images/2_people_1_room.jpg" alt="2인1실 이미지를 로드하지 못했습니다.">
+                </div>
+                </div>
+                </th>
+            </tr>
+            <tr>
+                <th>방 개수</th>
+                <th>A동 251개 /B동 303개</th>
+            </tr>
+            <tr>
+                <th rowspan="2">4인1실</th>
+                <th>정원</th>
+                <th>4인</th>
+                <th rowspan="2">
+                    <div class="img">
+                        <div class="scale">
+                            <img src="images/4_people_1_room.jpg" alt="4인1실 이미지를 로드하지 못했습니다.">
+                        </div>
+                        </div>
+                </th>
+            </tr>
+            <tr>
+                <th>방 개수</th>
+                <th>A동 15개 /B동 20개</th>
+            </tr>
+            <tr>
+                <th rowspan="2">4인4실</th>
+                <th>정원</th>
+                <th>4인</th>
+                <th rowspan="2">
+                <div class="img">
+                    <div class="scale">
+                        <img src="images/4_people_4_room.jpg" alt="4인4실 이미지를 로드하지 못했습니다.">
+                    </div>
+                </div>
+                </th>
+            </tr>
+            <tr>
+                <th>방 개수</th>
+                <th>A동 27개 /B동 70개</th>
+            </tr>
+            <tr>
+                <th rowspan="2">6인3실</th>
+                <th>정원</th>
+                <th>6인</th>
+                <th rowspan="2">
+                    <div class="img">
+                        <div class="scale">
+                            <img src="images/6_people_3_room.jpg" alt="6인3실 이미지를 로드하지 못했습니다.">
+                        </div>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>방 개수</th>
+                <th>A동 27개 /B동 2개</th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <form method="get" action="next.html" method="get">
+            <fieldset>
+                <legend>학생 정보</legend>
+                <table border="2">
+                    <tr>
+                        <th>학번</th>
+                        <th><input type="text" name="student_id"></th>
+                        <th>성명</th>
+                        <th><input type="text" name="student_name"></th>
+                        <th>학년</th>
+                        <th>
+                            <select name="student_grade">
+                                <option value="student_grade_1">1학년</option>
+                                <option value="student_grade_2">2학년</option>
+                                <option value="student_grade_3">3학년</option>
+                                <option value="stuent_grade_4">4학년</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>희망 호실</th>
+                        <th colspan="5">
+                            <input type="radio" name="room_type" value="2_people_1_room">2인 1실
+                            <input type="radio" name="room_type" value="4_people_1_room">4인 1실
+                            <input type="radio" name="room_type" value="4_people_4_room">4인 4실
+                            <input type="radio" name="room_type" value="6_people_3_room">6인 3실
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>기숙사 식수</th>
+                        <th colspan="5">
+                            <input type="radio" name="meals_per_day" value="0_per_day">日0식
+                            <input type="radio" name="meals_per_day" value="0.5_per_day">日0.5식
+                            <input type="radio" name="meals_per_day" value="1_per_day">日1식
+                            <input type="radio" name="meals_per_day" value="1.5_per_day">日1.5식
+                            <input type="radio" name="meals_per_day" value="2_per_day">日2식
+                            <input type="radio" name="meals_per_day" value="2.5_per_day">日2.5식
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>기타 사항</th>
+                        <th colspan="5"><input type="text" name="etc_content" id="etc_content" placeholder="예) 더위를 탐"></th>
+                    </tr>
+                </table>
+                <br>
+                <input type="submit" value="제출">
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <p>
+            명륜학사: [03063] 서울특별시 종로구 성균관로 25-2 성균관대학교 600주년 기념관 1층
+            <br>
+            봉룡학사: [16419] 경기도 수원시 장안구 서부로 2066 성균관대학교 기숙사 신관A 지하1층
+        </p>
+        
+    </footer>
+</body>
+</html>
